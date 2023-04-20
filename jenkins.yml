@@ -1,13 +1,13 @@
 identidock:
   build: .
+    dockerfile: Dockerfile
   expose:
-   - "9090"
+    - "9090"
   environment:
-   ENV: PROD
+    ENV: PROD
   links:
-   - dnmonster
-   - redis
-
+    - dnmonster
+    - redis
 
 dnmonster:
   image: amouat/dnmonster
