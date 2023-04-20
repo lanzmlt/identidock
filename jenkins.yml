@@ -1,6 +1,5 @@
 identidock:
   build: .
-    dockerfile: Dockerfile
   expose:
     - "9090"
   environment:
